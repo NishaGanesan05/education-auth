@@ -104,7 +104,7 @@ async function handleAuth(type) {
             return;
         }
 
-        const response = await fetch("http://localhost:5000/register", {
+        const response = await fetch("https://education-auth.onrender.com/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -135,7 +135,7 @@ async function handleAuth(type) {
         const password =
             document.querySelector("#loginForm input[name='password']").value;
 
-        const response = await fetch("http://localhost:5000/login", {
+        const response = await fetch("https://education-auth.onrender.com/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
